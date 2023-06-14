@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Personal Dashboard</h1>
+
+    <div class="container">
+      <div class="box restaurantContainer" id="yelpBox">
+        <h2>Suggested Restaurant</h2>
+        <h2 id="restaurantName"></h2>
+        <p id="yelpRating"></p>
+        <p id="address"></p>
+        <p id="review"></p>
+        <p id="someUrl"></p>
+        <button id="newRestaurant">Click For New Restaurant</button>
+      </div>
+
+      <div class="box redditContainer">
+        <h2>Reddit</h2>
+
+        <div class="redditRowContainer">
+          <div class="redditRow" id="redditRow1"></div>
+          <div class="redditRow" id="redditRow2"></div>
+          <div class="redditRow" id="redditRow3"></div>
+        </div>
+      </div>
+
+      <div class="box newsContainer">
+        <h2>News</h2>
+
+        <div class="newsRowContainer" id="newsBox">
+          <div class="newsRow" id="newsRow1"></div>
+          <div class="newsRow" id="newsRow2"></div>
+          <div class="newsRow" id="newsRow3"></div>
+        </div>
+      </div>
+
+      <div class="box weatherContainer">
+        <h2>Weather</h2>
+
+        <div class="weatherInformationContainer">
+          <div class="weatherColumn">
+            <div class="hourCell">
+              <h3>Hr</h3>
+            </div>
+            <div id="hourInformation"></div>
+          </div>
+
+          <div class="weatherColumn">
+            <div class="fahrenheitCell">
+              <h3>°F</h3>
+            </div>
+            <div id="fahrenheitInformation"></div>
+          </div>
+
+          <div class="weatherColumn">
+            <div class="celciusCell">
+              <h3>°C</h3>
+            </div>
+            <div id="celciusInformation"></div>
+          </div>
+
+          <div class="weatherColumn">
+            <div class="descriptionCell">
+              <h3>Description</h3>
+            </div>
+            <div id="descriptionInformation"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Task -->
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <div class="entireContainer" id="blurContainer">
+      <header class="header">
+        <div class="title">
+          <img
+            src="https://cdn1.iconfinder.com/data/icons/productivity-aesthetics-vol-2/256/To_Do_List-512.png"
+            alt="check logo"
+            width="30"
+            height="30"
+          />
+          Tasks
+        </div>
+      </header>
+      <div class="content">
+        <div class="leftPanel">
+          <div class="buttonContainer">
+            <div class="sidebutton" id="home">Home</div>
+            <div class="sidebutton" id="today">Today</div>
+            <div class="sidebutton" id="week">Week</div>
+            <div class="sidebutton" id="month">Month</div>
+          </div>
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/5244/5244842.png"
+            alt="plus button"
+            id="plusBtn"
+          />
+        </div>
+        <div class="rightPanel">
+          <!-- <div class="item">
+                    <button class="selected"></button>
+                    <div class="info">Task Name</div>
+                    <div class="priority">Low</div> 
+                    <div class="details">Details</div> 
+                    <div class="date">2023-06-08</div> 
+                    <div class="edit"><button class="editBtn">Edit</button></div> 
+                    <div class="delete"><button class="deleteBtn">Delete</button></div> 
+                </div> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="invisible">
+      <header class="createdHeader">
+        Create a new task <button id="closeButton">x</button>
+      </header>
+      <div class="createdContainer">
+        <div class="rightBar">
+          <textarea
+            name=""
+            id="addRowTitle"
+            cols="30"
+            rows="1"
+            placeholder="Title: Pay Bills"
+          ></textarea>
+          <textarea
+            name=""
+            id="addRowDescription"
+            cols="30"
+            rows="10"
+            placeholder="Details: e.g internet, phone, rent"
+          ></textarea>
+          <p>Due Date: <input type="date" id="date" /></p>
+          <div id="priority">
+            Priority:
+            <div class="createdButtonContainer">
+              <button class="low createdButtonOption">Low</button
+              ><button class="medium createdButtonOption">Medium</button
+              ><button class="high createdButtonOption">High</button>
+              <div class="rightButtonContainer">
+                <button class="add">Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="invisibleEdit">
+      <div class="createdEditContainer">
+        <!-- <button id="closeEditBtn">x</button>
+                    <textarea  name="" id="" cols="30" rows="1" placeholder="Title: Pay Bills"></textarea>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Details: e.g internet, phone, rent"></textarea>
+                    <p>Due Date: <input type="date"></p>
+                    <p id="priority">Priority: 
+                        <div class="buttonContainer">
+                            <button class="low">Low</button><button  class="medium">Medium</button><button class="high">High</button>
+                        </div>
+                        <div class="rightButtonContainer">
+                            <button class="add addEdit">Add</button>
+                        </div>
+                    </p> -->
+      </div>
+    </div>
+
+    <footer>
+      <div>
+        |
+        <a href="https://github.com/brianibarra777"
+          ><img src="./github.png" width="25" height="25"
+        /></a>
+        |
+      </div>
+      <div>2023 &copy brianibarra777</div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
